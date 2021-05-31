@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GuessTheCat</string>
+    <string name="quiz_app_name">Quiz App</string>
+    <string name="welcome">Welcome</string>
+    <string name="enter_name">Please enter you name below</string>
+    <string name="name">Name</string>
+    <string name="start_button">START</string>
+    <string name="question_title">Which breed of cat does this belong to?</string>
+    <string name="american_shorthair" />
+    <string name="quiz_progress_name">0/10</string>
+    <string name="choice1">Apple</string>
+    <string name="choice2">Google</string>
+    <string name="choice3">Amazon</string>
+    <string name="choice4">Facebook</string>
+    <string name="submit_text">SUBMIT</string>
+    <string name="quiz_score">Quiz Score</string>
+    <string name="trophy_cat_pic" />
+    <string name="congrats_message">Hi, well done </string>
+    <string name="username">User</string>
+    <string name="score_report">Your score is 9 out of 10</string>
+    <string name="done_button">DONE</string>
+
+</resources>

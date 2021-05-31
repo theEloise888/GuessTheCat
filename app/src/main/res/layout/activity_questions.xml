@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:id="@+id/quizQuestionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#4A4d55"
+            android:textSize="20sp"
+            android:text="@string/question_title"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/american_shorthair"
+            android:src="@drawable/ic_american_shorthair" />
+
+        <LinearLayout
+            android:id="@+id/progress_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <ProgressBar
+                android:id="@+id/progressBarTextView"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"/>
+
+            <TextView
+                android:id="@+id/quizProgressNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#7A8189"
+                android:textSize="14sp"
+                android:text="@string/quiz_progress_name"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/choiceOneTextView"
+            android:onClick="onSubmitClick"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_border"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/choice1"
+            android:textColor="#7A8189"
+            android:textSize="18sp"
+            android:focusable="true" />
+
+
+        <TextView
+            android:id="@+id/choiceTwoTextView"
+            android:onClick="onSubmitClick"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_border"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8189"
+            android:textSize="18sp"
+            android:text="@string/choice2"
+            android:focusable="true" />
+
+
+        <TextView
+            android:id="@+id/choiceThreeTextView"
+            android:onClick="onSubmitClick"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_border"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8189"
+            android:textSize="18sp"
+            android:text="@string/choice3"
+            android:focusable="true" />
+
+
+        <TextView
+            android:id="@+id/choiceFourTextView"
+            android:onClick="onSubmitClick"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_border"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8189"
+            android:textSize="18sp"
+            android:text="@string/choice4"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/purple_500"
+            android:onClick="onSubmitClick"
+            android:text="@string/submit_text"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
